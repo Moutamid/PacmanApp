@@ -43,7 +43,6 @@ public class DrawingView extends SurfaceView implements Runnable, SurfaceHolder.
     private Ghost ghost3;
     private BitmapImages bitmap;
 
-
     public DrawingView(Context context) {
         super(context);
         holder = getHolder();
