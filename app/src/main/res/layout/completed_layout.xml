@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pacman" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="65dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:onClick="showPlayScreen"
+            android:text="@string/nextLevel" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/settingsLabel" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="65dp"
+            android:onClick="showHelpScreen"
+            android:text="@string/help" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="#000000"
+        android:text="@string/wonGame"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/abc_action_bar_stacked_max_height"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:text="@string/keepPlaying"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>
